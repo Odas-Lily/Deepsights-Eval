@@ -4,8 +4,6 @@
 # GitHub Linguist language overrides
 # ---------------------------------------
 
-# Force Jupyter notebooks to be detected as Python
-*.ipynb linguist-language=Python
 
 # Ignore HTML files in stats
 *.html linguist-detectable=false
@@ -17,9 +15,8 @@ docs/* linguist-detectable=false
 .ipynb_checkpoints/* linguist-detectable=false
 
 # Ignore data files
-*.csv linguist-detectable=false
+
 *.tsv linguist-detectable=false
-*.xlsx linguist-detectable=false
 *.zip linguist-detectable=false
 
 # Ignore binary files and models
