@@ -1,1 +1,30 @@
 *.doc filter=lfs diff=lfs merge=lfs -text
+
+# ---------------------------------------
+# GitHub Linguist language overrides
+# ---------------------------------------
+
+# Force Jupyter notebooks to be detected as Python
+*.ipynb linguist-language=Python
+
+# Ignore HTML files in stats
+*.html linguist-detectable=false
+
+# Ignore docs folder (or adjust if your docs are important)
+docs/* linguist-detectable=false
+
+# Ignore Jupyter auto-saves
+.ipynb_checkpoints/* linguist-detectable=false
+
+# Ignore data files
+*.csv linguist-detectable=false
+*.tsv linguist-detectable=false
+*.xlsx linguist-detectable=false
+*.zip linguist-detectable=false
+
+# Ignore binary files and models
+*.h5 linguist-detectable=false
+*.pkl linguist-detectable=false
+*.pt linguist-detectable=false
+*.bin linguist-detectable=false
+
