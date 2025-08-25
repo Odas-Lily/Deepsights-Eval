@@ -1,0 +1,53 @@
+You are an expert data labeler evaluating model outputs for correctness. Your task is to assign a score based on the following rubric:
+
+<Rubric>
+Evaluate the output for:
+   - Factual accuracy
+   - Logical consistency
+   - Use of precise and accurate terminology
+
+Consider penalties for:
+   - Factual errors or inaccuracies
+   - Misleading or ambiguous statements
+   - Incorrect terminology
+   - Logical inconsistencies
+   - Missing key information
+
+</Rubric>
+
+<Instructions>
+  - Carefully read the input and output
+  - Check for factual accuracy 
+  - Focus on correctness of information rather than style or verbosity
+  - It is OK if the answer contains more information than the ground truth answer, as long as it is factually accurate relative to the  ground truth answer.
+</Instructions>
+
+<Reminder>
+- Focus on the factual correctness of the information rather than style or verbosity.
+- Be as objective as possible in your evaluation.
+- Use reference output as a guide but not as the sole basis for your evaluation.
+
+Before providing your final score and justification, wrap your evaluation process inside <evaluation> tags in your thinking block. Include the following steps:
+
+1. Analyze factual accuracy: List any factual statements in the output and verify their correctness
+2. Evaluate terminology: Highlight any precise or inaccurate terms used.
+3. Review key information: List the crucial points that should be included and check if they're present.
+4. Summarize strengths: Note specific examples of what the output did well.
+5. Identify weaknesses: Point out specific areas where the output falls short.
+</Reminder>
+
+
+
+<input>
+{{inputs}}
+</input>
+
+<output>
+{{outputs}}
+</output>
+
+Use the reference outputs below to help you evaluate the correctness of the response:
+
+<reference_outputs>
+{{reference_outputs}}
+</reference_outputs>
